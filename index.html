@@ -42,13 +42,13 @@
     const start = async () => {
       const mindarThree = new MindARThree({
         container: document.querySelector("#ar-container"),
-        imageTargetSrc: "./target.mind", // Ganti dengan marker kamu
+        imageTargetSrc: "./targets.mind"
       });
       const { renderer, scene, camera } = mindarThree;
 
       const anchor = mindarThree.addAnchor(0);
       const video = document.createElement("video");
-      video.src = "video.mp4"; // Ganti dengan nama file video kamu
+      video.src = "IMG_5201 (2).mp4";
       video.crossOrigin = "anonymous";
       video.loop = true;
       video.muted = true;
